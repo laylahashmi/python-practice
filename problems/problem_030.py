@@ -12,4 +12,9 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+    if len(values)==0 or len(values)==1:
+        return None
+    values.sort()
+    return values[-2]
+
+print(find_second_largest([4, 3, 23, 12, 89]))
