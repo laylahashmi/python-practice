@@ -1,5 +1,5 @@
 {
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.testing.pytestArgs": [
@@ -12,5 +12,9 @@
     "pytest",
     "venv",
     "whiteboarding"
-  ]
+  ],
+  "wolf.disableHotModeWarning": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  }
 }
