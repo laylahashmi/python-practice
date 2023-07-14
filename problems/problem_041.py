@@ -12,7 +12,7 @@
 #     output: []
 #   * input:  ["3", "1,9"]
 #     output: [3, 10]
-#   * input:  ["8,1,7", "10,10,10", "1,2,3"]
+input = ["8,1,7", "10,10,10", "1,2,3"]
 #     output:  [16, 30, 6]
 #
 # Look up the string split function to find out how to
@@ -21,4 +21,15 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    result = []
+    for string in csv_lines:
+        value = string.split(",")
+        sum = 0
+        for number in value:
+            sum += int(number)
+        result.append(sum)
+    return result
+
+
+
+print(add_csv_lines(input))

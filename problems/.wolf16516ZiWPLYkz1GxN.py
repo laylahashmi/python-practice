@@ -30,5 +30,5 @@ def pad_left(number, length, pad):
     return s
 
 
-print(pad_left(19, 8, "0"))
-print(pad_left(186, 7, "*"))
+print(pad_left(19, 8, ""))
+print(pad_left(10, 4, "*"))

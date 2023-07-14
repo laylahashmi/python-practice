@@ -26,9 +26,8 @@
 def pad_left(number, length, pad):
     s = str(number)
     while len(s) < length:
-        s = pad + s
-    return s
+        s = pad 
 
 
-print(pad_left(19, 8, "0"))
-print(pad_left(186, 7, "*"))
+print(pad_left(10, 5, "0"))
+print(pad_left(10, 4, "*"))

@@ -22,4 +22,14 @@
 
 
 def count_letters_and_digits(s):
-    pass
+    value1 = 0
+    value2 = 0
+    for item in s:
+        if item.isdigit():
+            value1+=1
+        else:
+            value2+=1
+    return value1, value2
+
+
+print(count_letters_and_digits("1ab789gh"))
