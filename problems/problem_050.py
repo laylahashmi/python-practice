@@ -7,8 +7,15 @@
 #             the extra item is in the first list
 #
 # Examples:
-#    * input: [1, 2, 3, 4]
+input = [1, 2, 3, 4]
 #      result: [1, 2], [3, 4]
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(list):
+    half = len(list)//2
+    return [list[:half], list[half:]]
+
+
+
+print(halve_the_list(input))

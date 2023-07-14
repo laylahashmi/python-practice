@@ -25,7 +25,7 @@ def find_indexes(search_list, search_term):
     for index, value in enumerate(search_list):
         # if the value == search_term
         if value == search_term:
-            # add the index of the item to the result list
+            # add the index of the value to the result list
             result.append(index)
     return result
 

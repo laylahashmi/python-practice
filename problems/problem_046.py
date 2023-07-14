@@ -16,9 +16,9 @@
 #     objects:  ["Portal", "Sable"]
 #     returns:  ["I play Portal", "I play Sable",
 #                "You play Portal", "You play Sable"]
-#   * subjects: ["I", "You"]
-#     verbs:    ["play", "watch"]
-#     objects:  ["Portal", "Sable"]
+subjects= ["I", "You"]
+verbs=    ["play", "watch"]
+objects=  ["Portal", "Sable"]
 #     returns:  ["I play Portal", "I play Sable",
 #                "I watch Portal", "I watch Sable",
 #                "You play Portal", "You play Sable"
@@ -28,4 +28,13 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+    result = []
+    for i in subjects:
+        for j in verbs:
+            for k in objects:
+                sentence = i + " " + j + " " + k
+                result.append(sentence)
+    return result
+
+
+print(make_sentences(subjects, verbs, objects))

@@ -12,17 +12,19 @@
 # are considered different words.
 #
 # Examples:
-#    * sentence: "I came I saw I learned"
+sentence = "I came I saw I learned"
 #      result:   {"I": 3, "came": 1, "saw": 1, "learned": 1}
 #    * sentence: "Hello Hello Hello"
 #      result:   {"Hello": 3}
 
-## FUNCTION PSEUDOCODE
-# function count_word_frequencies(sentence):
-    # words = split the sentence
-    # counts = new empty dictionary
-    # for each word in words
-        # if the word is not in counts
-            # counts[word] = 0
-        # add one to counts[word]
-    # return counts
+def count_word_frequencies(sentence):
+    split_sentence = sentence.split(" ")
+    result = {}
+    for word in split_sentence:
+        if word not in result:
+            result[word] = 0
+        result[word]+=1
+    return result
+
+
+print(count_word_frequencies(sentence))
